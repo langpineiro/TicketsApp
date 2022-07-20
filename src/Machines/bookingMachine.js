@@ -33,10 +33,11 @@ export const bookingTicket = createMachine({
        },
      },
      tickets: {
-        on: {
-          FINISH: "initial",
-          CANCEL: "initial",
-        },
+       after:{
+        5000:{
+          target:'initial',
+        }
+       },
      },
 
   }

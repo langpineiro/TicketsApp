@@ -7,7 +7,7 @@ function Header({state, send}) {
   return (
       <div class="card-header">
        <h1>Generador de Turnos</h1>
-       {!state.matches('initial') &&
+       {!state.matches('initial') && !state.matches('tickets') &&
         <button onClick={goToWelcome} className='btn btn-danger'>Cancelar</button>
        }
       </div>

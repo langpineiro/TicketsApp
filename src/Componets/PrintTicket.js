@@ -8,7 +8,7 @@ export function PrintTicket({state, send}) {
       <p className="card-text">Tu numero de turno: {count}</p>
       <p className="card-text">Cliente: {name}</p>
         <button type="submit" onClick={()=>{
-            send('FINISH');
+            send('after');
         }} className="btn btn-primary">volver al inicio</button>
     </>
   );
