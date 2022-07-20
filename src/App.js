@@ -5,6 +5,7 @@ function App() {
   return (
     <div className='container'>
       <BaseLayout/>
+      <p className='text-white'>Desarrollado por Anthony Lang</p>
     </div>
   );
 }

@@ -15,7 +15,7 @@ function ContentCard({state, send}) {
         return <Count send ={send}/>;
       }
       if(state.matches('tickets')){
-        return <PrintTicket send={send} />;
+        return <PrintTicket state={state} send={send} />;
       }
     }
   return (

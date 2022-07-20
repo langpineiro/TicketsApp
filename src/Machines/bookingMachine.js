@@ -30,11 +30,12 @@ export const bookingTicket = createMachine({
             actions: assign({name: (context, event) => event.name},
             )},
          CANCEL: "initial",
-       } 
+       },
      },
      tickets: {
         on: {
           FINISH: "initial",
+          CANCEL: "initial",
         },
      },
 

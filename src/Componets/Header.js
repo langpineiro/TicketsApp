@@ -11,7 +11,6 @@ function Header({state, send}) {
         <button onClick={goToWelcome} className='btn btn-danger'>Cancelar</button>
        }
       </div>
-
   );
 }
 
